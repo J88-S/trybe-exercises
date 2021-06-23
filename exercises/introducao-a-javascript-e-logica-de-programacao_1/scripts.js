@@ -33,3 +33,19 @@ if (numerico = true ){
     console.log("0");
 }
 
+let anguloA= 40;
+let anguloB= 50;
+let anguloC= 90;
+
+let somaAngulos= anguloA + anguloB + anguloC;
+let todosAngulos= anguloA > 0 && anguloB > 0 && anguloC;
+
+if (todosAngulos){
+    if(somaAngulos === 180){
+        console.log(true);
+    } else {
+        console.log(false);
+    };
+} else {
+    console.log("Erro:inválido");
+}
