@@ -24,3 +24,12 @@ if (num2 > num && num1 < num2){
 } else {
     console.log("0")
 }
+
+let numerico= true;
+
+if (numerico = true ){
+    console.log("Positivo");
+} else {
+    console.log("0");
+}
+
