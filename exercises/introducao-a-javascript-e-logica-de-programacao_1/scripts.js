@@ -15,3 +15,12 @@ if (numero1 > numero){
 } else {
     console.log("0");
 }
+let num= 5;
+let num1= 10;
+let num2= 15;
+
+if (num2 > num && num1 < num2){
+    console.log("É o maior dos números");
+} else {
+    console.log("0")
+}
