@@ -56,6 +56,16 @@
     </style>
   </head>
   <body>
-    <script src = 'script.js'> </script>
+    <script>
+      //1.adicione a tag h1 com texto exercício 5.2
+      let h1 = document.createElement('h1');
+      document.body.appendChild(h1);   
+      h1.innerHTML = 'Exercício 5.2 - JavaScript DOM'; 
+      //2.adicione a tag div main-content
+      let mainContent = document.createElement('div');
+      mainContent.classList.add('main-content');
+      document.body.appendChild('main-content');
+
+      </script>
   </body>
 </html>
