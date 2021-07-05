@@ -1,7 +1,9 @@
-let info = {
-    personagem: 'Margarida',
-    origem: 'Pato Donald',
-    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-    
-  };
-  console.log("Bem-vinda, " + info.personagem)
+let pessoaEstudante = {
+  nome: 'Ramona',
+  sobreNome: 'Jesus',
+  idade: 70,
+  apelido: 'Espanhola'
+}
+
+console.log(pessoaEstudante);
+console.log('Meu nome é', pessoaEstudante.nome, pessoaEstudante.sobreNome);
