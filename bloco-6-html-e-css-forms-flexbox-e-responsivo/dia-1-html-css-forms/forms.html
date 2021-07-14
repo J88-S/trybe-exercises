@@ -1,32 +1,57 @@
+Copiar
+<!--index.html-->
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1> <em>Cadastro de Currículo<a</h1>
-    </header>
-    <form action="" method="GET">
-    <fieldset>
-      Nome:<input type="text" placeholder="Digite nome" name="texto" maxlength="40" required>
-      Email:<input type="email" placeholder="Digite email" name="email"  maxlength="50" required>
-      CPF:<input type="text" placeholder="Digite CPF" name="texto" maxlength="11" required>
-      Endereço:<input type="text" placeholder="Digite endereço" name="texto" maxlength="200" required>
-      Cidade:<input type="text" placeholder="Digite cidade" name="texto" maxlength="28" required>
-      Estado:<input type="text" placeholder="Digite estado" name="texto" selected>
-      <option></option>
-      <button type="radio" required>Casa</button>
-      <button type="radio" required>Apartamento</button>
-    </fieldset>
-    <fieldset>
 
-    </fieldset>
-    
-  </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario-curriculo</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header class="form-header">
+    <h1>Formulário para cadastro de currículo</h1>
+    <p>Preencha os campos abaixo.</p>
+  </header>
+  <main>
+    <form id="cv-form">
+      <div class="form-row">
+        <fieldset>
+          <div class="line-content">
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name" maxlength="40" required>
+          </div>
+          <div class="line-content">
+            <label for="email">Endereço de e-mail: </label>
+            <input class="email-input" type="email" name="email" id="email" maxlength="50" required>
+          </div>
+          <div class="line-content">
+            <label for="cpf-number">CPF: </label>
+            <input type="text" name="cpf" id="cpf-number" maxlength="11" required>
+          </div>
+          <div class="line-content">
+            <label for="address">Endereço: </label>
+            <input type="text" name="address" id="address" maxlength="200" required>
+          </div>
+          <div class="line-content">
+            <label for="city">Cidade: </label>
+            <input type="text" name="city" id="city" maxlength="200" required>
+          </div>
+          <div class="line-content">
+            <label for="state">Estado: </label>
+            <select name="state" id="state" required>
+              <option disabled selected value>Selecione seu estado</option>
+            </select>
+          </div>
+          <div class="line-content">
+            <label for="houseType">Tipo de imóvel: </label>
+            <input type="radio" name="houseType" id="house" value="house" required> <span>Casa</span>
+            <input type="radio" name="houseType" id="apartment" value="apartment" required>
+            <span>Apartamento</span>
+          </div>
+        </fieldset>
 </body>
+
 </html>
