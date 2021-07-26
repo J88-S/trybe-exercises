@@ -31,3 +31,15 @@ assert.deepStrictEqual(person1, person2, 'Erro: person1 e person2 não são estr
 const person3 = { name: 'john', age: 19 };
 
 assert.notDeepStrictEqual(person1, person3, 'Erro: os valores dos objetos são estritamente iguais');
+
+// Exemplo caso o parâmetro seja 0 (USAR O throws)
+
+const assert = require('assert');
+
+function division(x, y) {
+  if (y === 0) throw new Error('parameter y must not be 0');
+  return x / y;
+}
+
+assert.strictEqual(division(10, 2), 5); // OK
+assert.throws(() => { division(10, 0); }, /^Error: parameter y must not be 0$/); // OK
