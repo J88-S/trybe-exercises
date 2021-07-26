@@ -11,7 +11,7 @@ function sum(a, b) {
 }
 
 // implemente seus testes aqui
-const expected = sum(4, 5);
+const expected = sum(0, 0);
 
-assert.ok(expected === 9);
-assert.strictEqual(expected, 9);
+assert.ok(expected === 0);
+assert.strictEqual(expected, 0);
